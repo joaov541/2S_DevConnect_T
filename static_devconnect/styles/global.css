@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Pattaya&display=swap');
+
+
+:root {
+    --cor-preto: #000000;
+    --cor-laranja: #D17B00;
+    --cor-cinza: #bababa;
+    --cor-amarelo: #F3D630;
+    --cor-cinza-escuro: #929DB3;
+    --cor-branco: #ffffff;
+    --cor-marrom-escuro: #3A2D32;
+
+    --cor-azul: #2686cc;
+    --cor-branca: #fff;
+    --cor-cinza-escuro2: #b6b6b6;
+    --cor-cinza-escuro3: #4d4d4d;
+    --cor-cinza-escuro-4: #7d7d7d;
+    --cor-cinza-medio: #d1d1d1;
+    --cor-cinza-claro: #e5e5e5;
+    --cor-cinca-claro2-branco: #fafafa;
+
+    --borda: 1px solid var(--cor-cinza-medio);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+
+
+}
+
+@font-face{
+font-family: Pattaya;
+src: url(../fonts/Pattaya/Pattaya-Regular.ttf);
+}
+
+@font-face{
+font-family: Gabarito;
+src: url(../fonts/Gabarito/Gabarito-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Gabarito", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* o valor total do tamanho do elemento conta tanto com espaços internos/externo e borda*/
+}
+
+
+body{
+    background-color: var(--cor-cinza-claro2-branco);
+}
+
+h1{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* formulário */
+input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var( --cor-cinca-claro-branco);
+}
+
