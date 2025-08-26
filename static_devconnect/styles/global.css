@@ -9,6 +9,8 @@
     --cor-cinza-escuro: #929DB3;
     --cor-branco: #ffffff;
     --cor-marrom-escuro: #3A2D32;
+    --cor-cinza-fundo: #ededed;
+    --cor-cursor: #c25e1c;
 
     --cor-azul: #2686cc;
     --cor-branca: #fff;
@@ -64,4 +66,16 @@ input{
     border: var(--borda);
     background-color: var( --cor-cinca-claro-branco);
 }
+
+.formulario-botao-azul{
+     background-color: var(--cor-laranja);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+   
+    color: white;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
 

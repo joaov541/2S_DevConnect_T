@@ -1,49 +1,90 @@
 main {
     width: 100%;
     min-height: 100vh;/* Altura da janela do dispositivo*/
-    background-color: var(--cor-cinca-claro2-branco);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main > div{
-    background-color: var(--cor-cinza-claro);
-    width: 50%;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+   display: flex;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
-    
-    
 }
 
 /*formulário*/
 #formulario{
-   
-    height: 300px;
-    /*background-color: bisque;*/
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-
+    padding: 3%;
+    gap: 15px;
 }
 
 #secao-cadastro{
-    width: 340px;
-    height: 50px;
-    /*background-color: black;*/
-    
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 .estilo-formulario{
     border: var(--borda);
     width: 100%;
     max-width: 340px;
     background-color: var(--cor-branca);
+}
+
+#formulario > div{
+    width: 100%;
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var( --cor-cinza-escuro3);
+    font-family: "Gabarito";
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+.formulario-botao-azul:hover{
+    background-color: #c25e1c;
+}
+
+
+#formulario > p{
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+    
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
+
+
+#formulario > a:hover, #secao-cadastro > p > a:hover{
+    color:#c25e1c;
+}
+
+
+
+
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
+   
 }
 
 .informacao-aplicativo{
@@ -66,4 +107,5 @@ main > div{
     flex-wrap: wrap;
     gap: 10px;
 }
+
 

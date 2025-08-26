@@ -1,0 +1,130 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main > div{
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+    gap: 15px;
+}
+
+#formulario > div{
+    width: 100%;
+   
+}
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branco);
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var( --cor-cinza-escuro3);
+    font-family: "Gabarito";
+    font-weight: 500;
+    padding-bottom: 6px;
+
+}
+
+#formulario input{
+    background-color: var(--cor-cinca-claro2-branco);
+}
+
+.formulario-botao{
+    width: 100%;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: var(--borda);
+    height: 40px;
+    border-radius: var(--borda-arredondada);
+    gap: 20px;
+}
+
+#formulario > p{
+    text-transform: lowercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    text-align: center;
+    
+}
+
+#conectar{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    
+}
+
+#formulario > a, #conectar > p > a{
+    text-decoration: none;
+    color: var(--cor-laranja);
+
+
+}
+
+form > input{
+   display: none;
+   display: block;
+   display: inline;
+}
+
+form > label{
+display: inline-block;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+  /* Estiliza o "botão fake" */
+  .botao-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var( --cor-cinza-medio);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botao-upload:hover {
+    background: var(--cor-cinza-escuro2);
+  }
+
+  .formulario-botao:hover{
+      background-color: #c25e1c;
+  }
+
+  #formulario > a, #conectar > p > a:hover{
+    color: #c25e1c;
+  }
