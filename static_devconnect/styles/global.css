@@ -21,7 +21,7 @@
     --cor-cinza-claro: #e5e5e5;
     --cor-cinca-claro2-branco: #fafafa;
 
-    --borda: 1px solid var(--cor-cinza-medio);
+    --borda: 1px solid var(--cor-cinza-escuro2);
     --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 20px;
@@ -60,6 +60,13 @@ h1{
 }
 
 /* formulário */
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    background-color: var(--cor-branca);
+}
+
 input{
     width: 100%;
     height: 35px;
@@ -78,4 +85,71 @@ input{
     font-weight: 400;
 }
 
+/* Cabeçalho */
+#cabecalho{
+    width: 100%;/* 100$ da janela de visualização*/
+    background-color: var(--cor-cinza);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+   /* align-items: center;*/
+   border-bottom: 2px solid var(--cor-cinza-escuro3) ;
+}
+
+#cabecalho > nav{
+    background-color: var(--cor-cinza);
+    width: 85%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+
+#logo-mobile{
+    display: none;/* remove a exibição ds imagem */
+}
+
+.cabecalho-acoes{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.cabecalho-acoes > a{
+    display: flex;
+    align-items: center;
+}
+
+
+#foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+#foto-stories{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+  
+}
+
+/* RESPONSIVO */
+@media only screen and (max-width: 485px) {
+    #logo-mobile{
+        display: initial; /* Volta ao valor inicial de exibição*/
+    }
+
+    #logo-desktop{
+        display: none;
+    }
+}
 

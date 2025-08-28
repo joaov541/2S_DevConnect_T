@@ -1,0 +1,21 @@
+header{
+    background-color: #bababa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+#logotipo{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+
+#zacaco3{
+    display: flex;
+    
+}
