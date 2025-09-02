@@ -11,6 +11,8 @@
     --cor-marrom-escuro: #3A2D32;
     --cor-cinza-fundo: #ededed;
     --cor-cursor: #c25e1c;
+    --cor-cinza-escuro2x: #bbcae9;
+
 
     --cor-azul: #2686cc;
     --cor-branca: #fff;
@@ -41,11 +43,14 @@ font-family: Gabarito;
 src: url(../fonts/Gabarito/Gabarito-VariableFont_wght.ttf);
 }
 
+              /*SELETOR GLOBAL*/
 *{
     font-family: "Gabarito", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* o valor total do tamanho do elemento conta tanto com espaços internos/externo e borda*/
+    outline-color: var(--cor-cinza-escuro-4);
+
 }
 
 
@@ -125,7 +130,7 @@ input{
 }
 
 
-#foto-perfil{
+.foto-perfil{
     width: 40px;
     height: 40px;
     object-fit: cover;/* Redimensiona a foto*/
