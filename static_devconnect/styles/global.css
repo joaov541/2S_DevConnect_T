@@ -92,13 +92,14 @@ input{
 
 /* Cabeçalho */
 #cabecalho{
-    width: 100%;/* 100$ da janela de visualização*/
+    width: 100%;/* 100% da janela de visualização*/
     background-color: var(--cor-cinza);
     height: 80px;
     display: flex;
     justify-content: center;
    /* align-items: center;*/
    border-bottom: 2px solid var(--cor-cinza-escuro3) ;
+   
 }
 
 #cabecalho > nav{
