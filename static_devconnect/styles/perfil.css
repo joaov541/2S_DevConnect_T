@@ -1,21 +1,23 @@
-header{
-    background-color: #bababa;
+#cabecalho{
+    width: 100%;/* 100$ da janela de visualização*/
+    background-color: var(--cor-cinza);
+    height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-   
-    
+   /* align-items: center;*/
+   border-bottom: 2px solid var(--cor-cinza-escuro3) ;
 }
 
-#logotipo{
-    display: flex;
-    justify-content:space-between;
-    
-    
+.foto-perfil2{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
 }
 
-#zacaco3{
-    display: flex;
-    
+.username{
+    font-family: Gabarito;
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 800;
 }
