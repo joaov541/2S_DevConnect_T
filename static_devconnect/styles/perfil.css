@@ -43,7 +43,7 @@ main {
 }
 
 .username {
-    font-family: Gabarito;
+    font-family: "Gabarito";
     font-size: var(--tamanho-fonte-lg);
     font-weight: 800;
     width: 100%;
@@ -114,6 +114,10 @@ main {
 
 .perfil-interacoes > button:hover{
     color: var(--cor-cursor);
+}
+#perfil.estilo-formulario{
+    border-bottom: 1px solid var(--cor-laranja);
+    padding: 3%;
 }
 
 .nome-pessoal{
@@ -214,6 +218,10 @@ main {
 
 .card-publi > button:hover{
     color: var( --cor-cinza-escuro3);
+}
+
+.linha-perfil{
+    background-color: var(--cor-laranja);
 }
 
 /* Responsivo */
