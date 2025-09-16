@@ -43,6 +43,12 @@ font-family: Gabarito;
 src: url(../fonts/Gabarito/Gabarito-VariableFont_wght.ttf);
 }
 
+@font-face{
+    font-family:  "Shadows Into Light", cursive;
+    src: url(../fonts/);
+
+}
+
               /*SELETOR GLOBAL*/
 *{
     font-family: "Gabarito", sans-serif;
@@ -147,6 +153,9 @@ input{
     border-radius: 50%;
   
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 
 /* RESPONSIVO */
 @media only screen and (max-width: 485px) {
