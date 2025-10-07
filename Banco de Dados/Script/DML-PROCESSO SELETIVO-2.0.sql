@@ -1,20 +1,6 @@
 --DML
 USE db_devconnect;
 
---TABELA PUBLICAÇÃO
-INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
-VALUES ('jvzinn2803' ,'opa opa', 'www.image_zago.br', '2025-10-02', 1);
-
-INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
-VALUES('rosa-Flores' ,'Vendendo Tulipas', 'www.tulipas.br', '2022-8-08', 2);
-
-INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
-VALUES ('Mario-Games123', 'Amo o jogo do Spider-Man', 'www.image-spiderman.br', '2025-06-22', 3);
-
-SELECT * FROM tb_publicacao;
-
-------------------------------------------------------------------------------------
-
 --TABELA USUÁRIO
 INSERT INTO tb_usuario(nome_completo, nome_usuario, email, numero_senha, foto_perfil)
 VALUES ('João Vitor', 'jvzinn2803', 'jvlindo@gmail.com', '28jv03amy', 'www.image_zago.br');
@@ -28,6 +14,21 @@ VALUES('Mario', 'Mario-games123', 'mariogamms155@email', 'games-life155', 'http/
 	  
 
 SELECT * FROM tb_usuario;
+
+------------------------------------------------------------------------------------
+
+--TABELA PUBLICAÇÃO
+INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
+VALUES ('jvzinn2803' ,'opa opa', 'www.image_zago.br', '2025-10-02', 1);
+
+INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
+VALUES('rosa-Flores' ,'Vendendo Tulipas', 'www.tulipas.br', '2022-8-08', 2);
+
+INSERT INTO tb_publicacao(nome_usuario, textos ,imagens_url, data_publi, id_usuario)
+VALUES ('Mario-Games123', 'Amo o jogo do Spider-Man', 'www.image-spiderman.br', '2025-06-22', 3);
+
+SELECT * FROM tb_publicacao;
+
 ------------------------------------------------------------------------------------
 --TABELA SEGUIDOR
 INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
