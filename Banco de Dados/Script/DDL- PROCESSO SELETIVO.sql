@@ -3,6 +3,22 @@ CREATE DATABASE db_devconnect;
 
 USE db_devconnect;
 
+
+
+---------------------------------------------------------
+
+
+CREATE TABLE Usuario(	
+id				INT				IDENTITY(1,1) PRIMARY KEY,
+nome_completo	NVARCHAR(255)				  NOT NULL,
+nome_usuario	NVARCHAR(50)	UNIQUE		  NOT NULL,
+email			NVARCHAR(255)	UNIQUE		  NOT NULL,
+numero_senha	NVARCHAR(50)	UNIQUE		  NOT NULL,
+foto_perfil		NVARCHAR(255)				  NOT NULL,
+);
+
+SELECT * FROM Usuario;
+---------------------------------------------------------
 ---------------------------------------------------------
 
 
@@ -24,20 +40,7 @@ WHERE id = 1;
 
 DELETE FROM tb_publicacao
 WHERE id = 3;
----------------------------------------------------------
 
-
-CREATE TABLE Usuario(	
-id				INT				IDENTITY(1,1) PRIMARY KEY,
-nome_completo	NVARCHAR(255)				  NOT NULL,
-nome_usuario	NVARCHAR(50)	UNIQUE		  NOT NULL,
-email			NVARCHAR(255)	UNIQUE		  NOT NULL,
-numero_senha	NVARCHAR(50)	UNIQUE		  NOT NULL,
-foto_perfil		NVARCHAR(255)				  NOT NULL,
-);
-
-SELECT * FROM Usuario;
----------------------------------------------------------
 
 CREATE TABLE tb_seguidor(
 id_usuario_seguir		INT NOT NULL,
