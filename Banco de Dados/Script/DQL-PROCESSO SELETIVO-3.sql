@@ -81,7 +81,13 @@ WHERE P.id_publicacao IS NULL;
 
 --Exiba todos os usuários que não chegaram a fazer Reações.
 
-
+SELECT U.nome_usuario
+FROM tb_usuario U
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM tb_curtida C
+    WHERE C.id_usuario = U.id_usuario
+);
 
 
 --Descurtir: remova uma curtida de um usuário há uma publicação.
