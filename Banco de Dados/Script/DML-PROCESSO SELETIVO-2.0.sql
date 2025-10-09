@@ -13,6 +13,16 @@ INSERT INTO tb_usuario(nome_completo, nome_usuario, email, numero_senha, foto_pe
 VALUES('Mario', 'Mario-games123', 'mariogamms155@email', 'games-life155', 'http//image-playstation.com');
 	  
 
+INSERT INTO tb_usuario(nome_completo, nome_usuario, email, numero_senha, foto_perfil)
+VALUES('Adão', 'dãozinho', 'Adao-ss@gmail', '1435AA', 'www.foto.br');
+
+
+INSERT INTO tb_usuario(nome_completo, nome_usuario, email, numero_senha, foto_perfil)
+VALUES('Jurema', 'Juju-beuty', 'Jurema@gmail', '123JUJU', 'www.Roupas.br');
+
+INSERT INTO tb_usuario(nome_completo, nome_usuario, email, numero_senha, foto_perfil)
+VALUES('Marcos', 'Marquinhos-125', 'Marcos@gmail', '6633MR', 'www.perfil.br');
+
 SELECT * FROM tb_usuario;
 
 ------------------------------------------------------------------------------------
@@ -34,18 +44,37 @@ SELECT * FROM tb_publicacao;
 INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
 VALUES (1, 2);
 
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (6, 1);
+
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (8, 7);
+
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (2, 1);
+
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (6, 1);
+
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (3, 2);
+
+INSERT INTO tb_seguidor(id_usuario_seguir, id_usuario_seguida)
+VALUES (6, 3);
+
+
 SELECT * FROM tb_seguidor;
 
 ------------------------------------------------------------------------------------
 --TABELA CURTIDA
-INSERT INTO tb_curtida(nome_usuario, data_publi, horario_curtida, id_publicacao, id_usuario)
-VALUES ('jvzinn2803', '2024-06-04', '14:30:20', 3, 1);
+INSERT INTO tb_curtida( data_curtida, horario_curtida, id_publicacao, id_usuario)
+VALUES ( '2024-06-04', '14:30:20', 3, 1);
 
-INSERT INTO tb_curtida(nome_usuario, data_publi, horario_curtida, id_publicacao, id_usuario)
-VALUES ('rosa-Flores', '2023-08-22', '22:10:20', 4, 2);
+INSERT INTO tb_curtida( data_curtida, horario_curtida, id_publicacao, id_usuario)
+VALUES ( '2023-08-22', '22:10:20', 4, 2);
 
-INSERT INTO tb_curtida(nome_usuario, data_publi, horario_curtida, id_publicacao, id_usuario)
-VALUES ('Mario-games123', '2025-10-09', '00:35:56', 5, 3);
+INSERT INTO tb_curtida(data_curtida, horario_curtida, id_publicacao, id_usuario)
+VALUES ('2025-10-09', '00:35:56', 5, 3);
 
 SELECT * FROM tb_curtida;
 ------------------------------------------------------------------------------------
