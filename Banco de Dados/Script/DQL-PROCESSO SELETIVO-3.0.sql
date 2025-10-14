@@ -92,8 +92,11 @@ WHERE NOT EXISTS (
 
 --Descurtir: remova uma curtida de um usuário há uma publicação.
 
-
+DELETE FROM tb_curtida
+WHERE id_curtida = 1;
 
 
 --Tornar a coluna id_usuario da tabela comentário unica(UNIQUE).
 
+ALTER TABLE tb_comentario
+ADD CONSTRAINT UQ_comentario_nome_usuario UNIQUE (nome_usuario);
