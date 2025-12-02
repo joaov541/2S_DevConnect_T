@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "DevConnect - Login";
+}
+
+ <link rel="stylesheet" href="~/css/login.css">
+
+<h1>Tela principal login</h1>
+    <main>
+     <div>
+        
+        <!-- formulário-->
+         <form id="formulario" class="estilo-formulario">
+            <img src="../images/logo-devconnect-lg.svg" alt="imagem do logotipo grande">
+
+               <div>
+                   <label for="">Nome de usuário:</label>
+                   <input type="text" name="" id="">
+               </div>
+
+               <div>
+                   <label for="">Senha:</label>
+                   <input type="password" name="" id="">
+               </div>
+                
+               <!--<button type="reset">Limpar</button>-->
+               <button type="submit" class="formulario-botao-azul">Entrar</button>
+
+               <p>ou</p>
+
+               <a href="#">Esqueceu a senha?</a>
+
+         </form>
+
+         <!-- seção cadastro -->
+         <section id="secao-cadastro" class="estilo-formulario">
+            <p>Não tem uma conta? <a href="../pages/cadastro.html">Cadastre-se</a></p>
+         </section>
+
+         <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
+
+         <!-- seção instalação -->
+         <section id="secao-instalacao">
+            <img src="../images/app-store.svg" alt="imagem informando para baixar no app store" class="">
+
+             <img src="../images/google-play.svg" alt="imagem informando para baixar no play store" class="">
+         </section>
+         
+     </div>
+    </main>

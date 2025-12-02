@@ -1,0 +1,109 @@
+main {
+    width: 100%;
+    min-height: 100vh;/* Altura da janela do dispositivo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div{
+    width: 90%;
+   display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*formulário*/
+#formulario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+    gap: 15px;
+}
+
+#secao-cadastro{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.estilo-formulario{
+    
+    max-width: 340px;
+}
+
+#formulario > div{
+    width: 100%;
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var( --cor-cinza-escuro3);
+    font-family: "Gabarito";
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+.formulario-botao-azul:hover{
+    background-color: #c25e1c;
+}
+
+
+#formulario > p{
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro);
+    
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
+
+
+#formulario > a:hover, #secao-cadastro > p > a:hover{
+    color:#c25e1c;
+}
+
+
+
+
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
+   
+}
+
+.informacao-aplicativo{
+    background-color: transparent;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 400;
+
+}
+
+#secao-instalacao img{
+    width: 133px;
+    height: 39px;
+    
+}
+#secao-instalacao {
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+

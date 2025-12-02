@@ -1,0 +1,243 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #fafafa;
+
+}
+
+
+.container-flex-publi {
+    width: 85%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cabecalho {
+    width: 100%;
+    /* 100% da janela de visualização*/
+    background-color: var(--cor-cinza);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;*/
+    border-bottom: 2px solid var(--cor-cinza-escuro3);
+}
+
+
+
+
+.foto-perfil2 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.username {
+    font-family: "Gabarito";
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 800;
+    width: 100%;
+}
+
+#perfil {
+    width: 100%;
+    min-height: 163px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: center;
+    gap: 60px;
+    background-color: #fafafa;
+}
+
+#perfil > button{
+    background-color: transparent;
+    border: none;
+}
+
+#perfil>a {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+#perfil>a>span {
+    color: black;
+    font-size: 36px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+
+.nomes-superiores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomes-inferiores {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.perfil-interacoes {
+    flex-wrap: wrap;
+    width: 378px;
+    display: flex;
+    row-gap: 13px;
+    column-gap: 30px;
+    justify-content: flex-start;
+}
+
+.perfil-interacoes > button{
+    background-color: transparent;
+    border: none;
+    color: var(--cor-laranja);
+    font-size: medium;
+    cursor: pointer;
+}
+
+.perfil-interacoes > button:hover{
+    color: var(--cor-cursor);
+}
+#perfil.estilo-formulario{
+    border-bottom: 1px solid var(--cor-laranja);
+    padding: 3%;
+}
+
+.nome-pessoal{
+    font-weight: 900;
+}
+
+#publi-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#publi-perfil > p{
+    font-size: large;
+    font-weight: 800;
+
+}
+
+.cabecalho-publi{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho-publi > p{
+    font-size: larger;
+    font-weight: 800;
+}
+
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+.card-publi{
+    background-color: #ffffff;
+}
+
+.card-publi > header{
+   /* height: 80px;*/
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    
+}
+
+.card-publi > header > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Gabarito;
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 400;
+}
+
+
+.descricao-publicacao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    order: 2;
+    padding: 0 3%;
+    flex-wrap: wrap;
+}
+
+.interacoes-publicacao{
+    width: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    order: 1;
+    margin: 15px 3%;
+
+}
+
+.interacoes-publicacao > button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.card-publi > button{
+    margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+    color: #B6B6B6;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.card-publi > button:hover{
+    color: var( --cor-cinza-escuro3);
+}
+
+.linha-perfil{
+    background-color: var(--cor-laranja);
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 444px){
+    .perfil-interacoes{
+        width: 165px;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 338px){
+    .username{
+        text-align: center;
+    }
+    .perfil-interacoes{
+        justify-content: center;
+    }
+}

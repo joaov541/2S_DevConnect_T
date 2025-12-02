@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Pattaya&display=swap');
+
+
+:root {
+    --cor-preto: #000000;
+    --cor-laranja: #D17B00;
+    --cor-cinza: #bababa;
+    --cor-amarelo: #F3D630;
+    --cor-cinza-escuro: #929DB3;
+    --cor-branco: #ffffff;
+    --cor-marrom-escuro: #3A2D32;
+    --cor-cinza-fundo: #ededed;
+    --cor-cursor: #c25e1c;
+    --cor-cinza-escuro2x: #bbcae9;
+
+
+    --cor-azul: #2686cc;
+    --cor-branca: #fff;
+    --cor-cinza-escuro2: #b6b6b6;
+    --cor-cinza-escuro3: #4d4d4d;
+    --cor-cinza-escuro-4: #7d7d7d;
+    --cor-cinza-medio: #d1d1d1;
+    --cor-cinza-claro: #e5e5e5;
+    --cor-cinca-claro2-branco: #fafafa;
+
+    --borda: 1px solid var(--cor-cinza-escuro2);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+
+
+}
+
+@font-face{
+font-family: Pattaya;
+src: url(../fonts/Pattaya/Pattaya-Regular.ttf);
+}
+
+@font-face{
+font-family: Gabarito;
+src: url(../fonts/Gabarito/Gabarito-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family:  "Shadows Into Light", cursive;
+    src: url(../fonts/);
+
+}
+
+              /*SELETOR GLOBAL*/
+*{
+    font-family: "Gabarito", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* o valor total do tamanho do elemento conta tanto com espaços internos/externo e borda*/
+    outline-color: var(--cor-cinza-escuro-4);
+
+}
+
+
+body{
+    background-color: var(--cor-cinza-claro2-branco);
+}
+
+h1{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* formulário */
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    background-color: var(--cor-branca);
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var( --cor-cinca-claro-branco);
+}
+
+.formulario-botao-azul{
+     background-color: var(--cor-laranja);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+   
+    color: white;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+/* Cabeçalho */
+#cabecalho{
+    width: 100%;/* 100% da janela de visualização*/
+    background-color: var(--cor-cinza);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+   /* align-items: center;*/
+   border-bottom: 2px solid var(--cor-cinza-escuro3) ;
+   
+}
+
+#cabecalho > nav{
+    background-color: var(--cor-cinza);
+    width: 85%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+
+#logo-mobile{
+    display: none;/* remove a exibição ds imagem */
+}
+
+.cabecalho-acoes{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.cabecalho-acoes > a{
+    display: flex;
+    align-items: center;
+}
+
+
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+#foto-stories{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/* Redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+/* RESPONSIVO */
+@media only screen and (max-width: 485px) {
+    #logo-mobile{
+        display: initial; /* Volta ao valor inicial de exibição*/
+    }
+
+    #logo-desktop{
+        display: none;
+    }
+}
+
