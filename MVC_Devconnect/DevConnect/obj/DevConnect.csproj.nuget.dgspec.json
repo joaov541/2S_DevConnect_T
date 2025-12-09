@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54198904880\\Desktop\\BackEnd_T\\MVC\\DevConnect\\DevConnect.csproj": {}
+    "C:\\Users\\54198904880\\Desktop\\2S_DevConnect_T\\MVC_Devconnect\\DevConnect\\DevConnect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54198904880\\Desktop\\BackEnd_T\\MVC\\DevConnect\\DevConnect.csproj": {
+    "C:\\Users\\54198904880\\Desktop\\2S_DevConnect_T\\MVC_Devconnect\\DevConnect\\DevConnect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54198904880\\Desktop\\BackEnd_T\\MVC\\DevConnect\\DevConnect.csproj",
+        "projectUniqueName": "C:\\Users\\54198904880\\Desktop\\2S_DevConnect_T\\MVC_Devconnect\\DevConnect\\DevConnect.csproj",
         "projectName": "DevConnect",
-        "projectPath": "C:\\Users\\54198904880\\Desktop\\BackEnd_T\\MVC\\DevConnect\\DevConnect.csproj",
+        "projectPath": "C:\\Users\\54198904880\\Desktop\\2S_DevConnect_T\\MVC_Devconnect\\DevConnect\\DevConnect.csproj",
         "packagesPath": "C:\\Users\\54198904880\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54198904880\\Desktop\\BackEnd_T\\MVC\\DevConnect\\obj\\",
+        "outputPath": "C:\\Users\\54198904880\\Desktop\\2S_DevConnect_T\\MVC_Devconnect\\DevConnect\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,18 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

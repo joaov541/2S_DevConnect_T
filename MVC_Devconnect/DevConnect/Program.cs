@@ -1,4 +1,11 @@
+using DevConnect.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<db_devconnectContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DevCon_Windows"))
+);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -27,3 +34,7 @@ app.MapControllerRoute(
 
 
 app.Run();
+
+
+
+// dotnet ef dbcontext scaffold "Server=(localdb)\\MSSQLLocalDB;Database=db_devconnect;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c db_devconnectContext --data-annotations -f

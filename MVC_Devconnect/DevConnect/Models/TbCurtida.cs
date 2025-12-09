@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace DevConnect.Models;
+
+[Table("tb_curtida")]
+public partial class TbCurtida
+{
+    [Key]
+    [Column("id_curtida")]
+    public int IdCurtida { get; set; }
+
+    [Column("data_curtida")]
+    public DateOnly DataCurtida { get; set; }
+
+    [Column("horario_curtida")]
+    public TimeOnly HorarioCurtida { get; set; }
+
+    [Column("id_publicacao")]
+    public int? IdPublicacao { get; set; }
+
+    [Column("id_usuario")]
+    public int? IdUsuario { get; set; }
+
+    [ForeignKey("IdPublicacao")]
+    [InverseProperty("TbCurtida")]
+    public virtual TbPublicacao? IdPublicacaoNavigation { get; set; }
+
+    [ForeignKey("IdUsuario")]
+    [InverseProperty("TbCurtida")]
+    public virtual TbUsuario? IdUsuarioNavigation { get; set; }
+}

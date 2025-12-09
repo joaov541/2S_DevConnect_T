@@ -71,23 +71,23 @@ INSERT INTO tb_curtida( data_curtida, horario_curtida, id_publicacao, id_usuario
 VALUES ( '2024-06-04', '14:30:20', 3, 1);
 
 INSERT INTO tb_curtida( data_curtida, horario_curtida, id_publicacao, id_usuario)
-VALUES ( '2023-08-22', '22:10:20', 4, 2);
+VALUES ( '2023-08-22', '22:10:20', 1, 2);
 
 INSERT INTO tb_curtida(data_curtida, horario_curtida, id_publicacao, id_usuario)
-VALUES ('2025-10-09', '00:35:56', 5, 3);
+VALUES ('2025-10-09', '00:35:56', 2, 3);
 
 SELECT * FROM tb_curtida;
 ------------------------------------------------------------------------------------
 --TABELA COMENTÁRIO
 INSERT INTO tb_comentario(nome_usuario, textos_coment, horario_coment,imagem_coment, id_publicacao)
-VALUES ('rosa-Santos', 'amo flores', '11:20:00','http//image',  4);
+VALUES ('rosa-Santos', 'amo flores', '11:20:00','http//image',  2);
 
 
 INSERT INTO tb_comentario(nome_usuario, textos_coment, horario_coment,imagem_coment, id_publicacao)
-VALUES ('jvzinn2803', 'amo basquete', '13:45:12', 'http//image-lebromjames', 3);
+VALUES ('jvzinn2803', 'amo basquete', '13:45:12', 'http//image-lebromjames', 1);
 
 INSERT INTO tb_comentario(nome_usuario, textos_coment, horario_coment,imagem_coment, id_publicacao)
-VALUES ('mario-games123', 'Hj vai ter live em', '11:55:02', 'http//image-playstation', 5);
+VALUES ('mario-games123', 'Hj vai ter live em', '11:55:02', 'http//image-playstation', 3);
 
 
 SELECT * FROM tb_comentario;

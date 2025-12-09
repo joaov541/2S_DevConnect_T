@@ -4,18 +4,18 @@
  
  <header id="cabecalho">
         <nav>
-            <a  id="logo-desktop" href="./feed.html">
+            <a  id="logo-desktop"  asp-controller="Home" asp-action="Index">
                 <img src="../images/logo-devconnect-md.svg" alt="Logo da empresa DevConnect">
 
             </a>
 
-            <a id="logo-mobile" href="./feed.html">
+            <a id="logo-mobile" asp-controller="Home" asp-action="Index">
                 <img src="../images/logo-devconnect-sm.svg" alt="Logo da empresa DevConnect">
 
             </a>
             
             <div class="cabecalho-acoes">
-                <a href="./feed.html">
+                <a asp-controller="Home" asp-action="Index">
                     <img src="../images/Property 1=Variant3-casamarrom.svg" alt="ícone da casa marrom">                    
                 </a>
 
@@ -23,7 +23,7 @@
                     <img src="../images/Property 1=Variant3-coracaomarrom.svg" alt="ícone do coração marrom">
                 </a>
 
-               <a href="./perfil.html">
+               <a asp-controller="Usuario" asp-action="Perfil">
                 <img class="foto-perfil" src="../images/download (1).jpg" alt="Foto de Perfil">
                </a>
 
@@ -54,7 +54,7 @@
                 <a href="#">
                     <img src="../images/download (2).jpg" alt="foto de perfil">
                     <span>
-                   hitalo_kids
+                   hitalo_santos
                     </span>
                 </a>
              </article>

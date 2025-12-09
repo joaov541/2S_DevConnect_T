@@ -8,7 +8,7 @@ USE db_devconnect;
 ---------------------------------------------------------
 
 
-CREATE TABLE Usuario(	
+CREATE TABLE tb_usuario(	
 id_usuario			INT				IDENTITY(1,1) PRIMARY KEY,
 nome_completo	NVARCHAR(255)				  NOT NULL,
 nome_usuario	NVARCHAR(50)	UNIQUE		  NOT NULL,
@@ -17,7 +17,7 @@ numero_senha	NVARCHAR(50)	UNIQUE		  NOT NULL,
 foto_perfil		NVARCHAR(255)				  NOT NULL,
 );
 
-SELECT * FROM Usuario;
+SELECT * FROM tb_usuario;
 
       EXEC sp_rename 'tb_usuario.id', 'id_usuario', 'COLUMN';
 
@@ -33,7 +33,7 @@ textos			NVARCHAR (255)		NULL,
 imagens_url		NVARCHAR(255)		NULL,
 data_publi		DATE				NOT NULL,
 
-id_usuario INT FOREIGN KEY REFERENCES tb_usuario(id)
+id_usuario INT FOREIGN KEY REFERENCES tb_usuario(id_usuario)
 
 );
 
@@ -63,8 +63,8 @@ id_curtida					INT				IDENTITY (1,1)  PRIMARY KEY,
 data_curtida		DATE							NOT NULL,
 horario_curtida		TIME							NOT NULL,
 
-id_publicacao		INT FOREIGN KEY REFERENCES tb_publicacao(id),
-id_usuario          INT FOREIGN KEY REFERENCES tb_usuario(id)
+id_publicacao		INT FOREIGN KEY REFERENCES tb_publicacao(id_publicacao),
+id_usuario          INT FOREIGN KEY REFERENCES tb_usuario(id_usuario)
 );
 
 SELECT * FROM tb_curtida;
@@ -83,7 +83,7 @@ textos_coment		NVARCHAR (255)			   NOT NULL,
 horario_coment		TIME					   NOT NULL,
 imagem_coment		NVARCHAR (255)				   NOT NULL,
 
-id_publicacao INT FOREIGN KEY REFERENCES tb_publicacao(id)
+id_publicacao INT FOREIGN KEY REFERENCES tb_publicacao(id_publicacao)
 );
 
        EXEC sp_rename 'tb_comentario.id', 'id_comentario', 'COLUMN';
