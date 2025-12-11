@@ -1,4 +1,20 @@
+@using Microsoft.IdentityModel.Tokens
 
+@model List<DevConnect.Models.TbPublicacao>
+
+
+<script defer>
+
+        const usuarioPublicacao = "@ViewBag.UsuarioPublicacao"
+
+        if(usuarioPublicacao == "Nao Cadastrada"){
+            alert("Usuário não cadastrado! Tente Novamente...")
+        }
+
+        else if(usuarioPublicacao == "Cadastrada"){
+             alert("Publicação postada...😁");
+        }
+</script>
 
  <link rel="stylesheet" href="~/css/feed.css">
  
@@ -164,13 +180,13 @@
         <section id="cadastro-publi" class="estilo-formulario">
             <h2>Publicação</h2>
 
-            <form action="">
-                <textarea name="mensagem" id="mensagem"  placeholder="Digite a descrição do post..."></textarea>
+            <form enctype="multipart/form-data" asp-action="Index" asp-controller="Feed">
+                <textarea name="Textos" id="mensagem"  placeholder="Digite a descrição do post..." required></textarea>
 
                 <footer>
                     <div>
                         <label for="arquivo" class="botao-upload">Faça upload da sua imagem aqui...</label>
-                        <input type="file" id="arquivo">
+                        <input type="file" id="arquivo" name="imagem">
                     </div>
 
                     <button type="submit" class="formulario-botao-azul">Postar</button>
@@ -181,10 +197,15 @@
         </section>
 
         <section id="publicacoes">
-            <article class="card-publi">
+        @foreach(TbPublicacao publicacaos in Model){
+
+            //Só irá exibir publicações que possuem imagens
+            if(!publicacaos.ImagensUrl.IsNullOrEmpty()){
+
+                 <article class="card-publi">
                 <header>
                     <a href="#">
-                        <img class="foto-perfil" src="../images/download (1).jpg" alt="foto de perfil">
+                        <img class="foto-perfil" src="../images/@publicacaos.IdUsuarioNavigation?.FotoPerfil" alt="foto de perfil">
                        
                        zacaco_lindo
                         
@@ -192,11 +213,11 @@
                 </header>
 
                 <figure>
-                    <img class="imagem-publicacao" src="../images/download (6)-fotozagoChris.svg" alt="">
+                    <img class="imagem-publicacao" src="~/images/@publicacaos.ImagensUrl" alt="">
 
                    <figcaption class="descricao-publicacao">
                     zacaco_lindo
-                    <p>Eu e meu mano Crhis Diaz fomos roubados no casamento do buzeira.</p>
+                    <p>@publicacaos.Textos</p>
                    </figcaption>
 
                    <div class="interacoes-publicacao">
@@ -220,8 +241,52 @@
                  
             </article>
 
-            
+            }
 
+            else{
+
+                 <article class="card-publi">
+                    <header>
+                        <a href="#">
+                            <img class="foto-perfil" src="../images/download (1).jpg" alt="foto de perfil">
+
+                            zacaco_lindo
+
+                        </a>
+                    </header>
+
+                    <figure>
+                       
+
+                        <figcaption class="descricao-publicacao">
+                           
+                            <p class="texto-publi">Tava logo no Rancho do Maia, e o Gordão da XJ passou mó vergonha no desfile kkkkkkk, esse cara é chave🤣🤣🙉.</p>
+                        </figcaption>
+
+                        <div class="interacoes-publicacao">
+                            <button>
+                                <img src="../images/icone-coracao-preto.svg" alt="">
+                            </button>
+
+                            <button>
+                                <img src="../images/icone-comentario-preto.svg" alt="">
+                            </button>
+
+                            <span>
+                                230 mil curtidas
+                            </span>
+
+                        </div>
+
+                    </figure>
+
+                    <button type="button">Ver mais comentários...</button>
+
+                </article>
+            }
+           
+        }
+  
         </section>
 
       

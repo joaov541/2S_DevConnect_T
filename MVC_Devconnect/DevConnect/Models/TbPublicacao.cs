@@ -13,13 +13,10 @@ public partial class TbPublicacao
     [Column("id_publicacao")]
     public int IdPublicacao { get; set; }
 
-    [Column("nome_usuario")]
-    [StringLength(255)]
-    public string NomeUsuario { get; set; } = null!;
 
     [Column("textos")]
     [StringLength(255)]
-    public string? Textos { get; set; }
+    public string Textos { get; set; } = null!;
 
     [Column("imagens_url")]
     [StringLength(255)]
@@ -40,4 +37,5 @@ public partial class TbPublicacao
 
     [InverseProperty("IdPublicacaoNavigation")]
     public virtual ICollection<TbCurtida> TbCurtida { get; set; } = new List<TbCurtida>();
+    
 }

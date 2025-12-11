@@ -7,6 +7,7 @@ using DevConnect.Contexts;
 using DevConnect.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevConnect.Controllers
 {
