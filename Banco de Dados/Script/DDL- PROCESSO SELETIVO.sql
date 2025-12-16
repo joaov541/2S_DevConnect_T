@@ -45,8 +45,9 @@ SELECT * FROM tb_publicacao;
 DELETE FROM tb_publicacao
 WHERE id = 1;
 
-DELETE FROM tb_publicacao
-WHERE id = 3;
+ALTER TABLE tb_publicacao
+DROP COLUMN nome_usuario;
+
 
 ----------------------------------------------------------------
 CREATE TABLE tb_seguidor(

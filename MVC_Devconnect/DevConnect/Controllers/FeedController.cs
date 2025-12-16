@@ -32,10 +32,10 @@ namespace DevConnect.Controllers
             try
             {
                   //são todas as publicações
-             List<TbPublicacao> publicacaos = await _context.TbPublicacao.Include(p => p.IdUsuarioNavigation).ToListAsync();
+             List<TbPublicacao> Publicacaos = await _context.TbPublicacao.Include(p => p.IdUsuarioNavigation).ToListAsync();
 
              //listar as publicações
-            return View(publicacaos);
+            return View(Publicacaos);
 
             }
             
@@ -101,6 +101,8 @@ namespace DevConnect.Controllers
                 return View();
             }
 
+
+            
 
             // //Adiciona um novo usuário na tabela usuário
             // _context.TbPublicacao.Add(novaPubli);

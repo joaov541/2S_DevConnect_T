@@ -3,6 +3,7 @@
 @model List<DevConnect.Models.TbPublicacao>
 
 
+
 <script defer>
 
         const usuarioPublicacao = "@ViewBag.UsuarioPublicacao"
@@ -197,15 +198,15 @@
         </section>
 
         <section id="publicacoes">
-        @foreach(TbPublicacao publicacaos in Model){
+        @foreach(TbPublicacao Publicacaos in Model){
 
             //Só irá exibir publicações que possuem imagens
-            if(!publicacaos.ImagensUrl.IsNullOrEmpty()){
+            if(!Publicacaos.ImagensUrl.IsNullOrEmpty()){
 
                  <article class="card-publi">
                 <header>
                     <a href="#">
-                        <img class="foto-perfil" src="../images/@publicacaos.IdUsuarioNavigation?.FotoPerfil" alt="foto de perfil">
+                        <img class="foto-perfil" src="../images/@Publicacaos.IdUsuarioNavigation?.FotoPerfil" alt="foto de perfil">
                        
                        zacaco_lindo
                         
@@ -213,11 +214,11 @@
                 </header>
 
                 <figure>
-                    <img class="imagem-publicacao" src="~/images/@publicacaos.ImagensUrl" alt="">
+                    <img class="imagem-publicacao" src="~/images/@Publicacaos.ImagensUrl" alt="">
 
                    <figcaption class="descricao-publicacao">
                     zacaco_lindo
-                    <p>@publicacaos.Textos</p>
+                    <p>@Publicacaos.Textos</p>
                    </figcaption>
 
                    <div class="interacoes-publicacao">
